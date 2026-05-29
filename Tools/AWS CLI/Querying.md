@@ -31,7 +31,7 @@ aws ec2 describe-network-interfaces \
 
 ```shell
 aws ec2 describe-network-interfaces \
-  --network-interface-ids eni-0ec71f9268f71c26b \
+  --network-interface-ids eni-x000000000000000 \
   --query 'NetworkInterfaces[*].{ID:NetworkInterfaceId,Type:InterfaceType,Description:Description,InstanceId:Attachment.InstanceId}' \
   --output table
 ```
